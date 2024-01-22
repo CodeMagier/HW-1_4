@@ -282,11 +282,9 @@ class ViewController: UIViewController {
             return
         }
         
-        if text.count < 0 {
+        if text.count < 1 {
             validataTF(tf: emailTF, error: "Please, fill field", borderColor: UIColor.red.cgColor, borderWidth: 2)
-        }
-        
-        if text1.count < 0 {
+        } else if text1.count < 1 {
             validataTF(tf: passTF, error: "Please, fill field", borderColor: UIColor.red.cgColor, borderWidth: 2)
 
         } else {
